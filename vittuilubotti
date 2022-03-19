@@ -17,14 +17,14 @@ nimi2 = input("Oikeesti? =D: ")
 
 vastaus1 = ["joo", "jep", "je", "jo", "j", "kyllä", "kyl", "k"]
 
-#if true (sama kuin nimi)
+#if true (kyllä)
 if nimi2 in vastaus1:  
     time.sleep (1)
     print ("...")
     time.sleep (1)
     print ("Pakko kai se on sitten uskoo... xD")
 
-#if false (eri kuin nimi)    
+#if false (ei)    
 else: 
     time.sleep (1)
     print ("No sitähän minäkin")
