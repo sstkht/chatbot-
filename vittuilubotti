@@ -4,34 +4,42 @@ import time
 
 print ("Tervetuloa vittuilemaan botille!")
 
+#Kysyy käyttäjän nimeä
 time.sleep (1)
 nimi = input ("kenelle tänään vittuillaan?: ")
 
 time.sleep (1)
 print (f"{nimi}? Hahaha!")
 
+#Varmistaa käyttäjän nimen
 time.sleep (1)
 nimi2 = input("Oikeesti? =D: ")
-if nimi2 == "kyllä" or nimi2 == "joo" or nimi2 == "jep" or nimi2 == "juu" or nimi2 == "je" or nimi2 == "j" or nimi2 == "kyl" or nimi2 == "k" :
+
+vastaus1 = ["joo", "jep", "je", "jo", "j", "kyllä", "kyl", "k"]
+
+#if true (sama kuin nimi)
+if nimi2 in vastaus1:  
     time.sleep (1)
     print ("...")
     time.sleep (1)
     print ("Pakko kai se on sitten uskoo... xD")
-else:
+
+#if false (eri kuin nimi)    
+else: 
     time.sleep (1)
     print ("No sitähän minäkin")
     time.sleep (1)
+    
+#pyytää käyttäjältä uuden nimen
     nimi3 = input ("No annahan nyt se oikea nimi : ")
-    if nimi3 == (nimi):
+    
+#if true (sama kuin nimi)
+    if nimi3 == (nimi): 
         time.sleep(1)
         print ("Heti kärkeen koitetaan koijata apinaa")
-    else:
+        
+#if false (eri kuin nimi)
+    else: 
         time.sleep (1)
         print ("No oliko se nyt niin vaikeeta? Vai etkö kehdannut sanoa? En olis kyllä ite sanonut =D")
-    
-
-
-
-
-       
-
+        
